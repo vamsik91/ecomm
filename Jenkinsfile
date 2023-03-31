@@ -18,6 +18,20 @@
                     }
                   
                 }
-            } 
+            }
+            stage('INTEGRATION TESTING') { 
+              
+               steps {
+                
+                script{ 
+                     sh 'mvn verify -DskipunitTests'
+                    }
+                  
+                }
+            }
+
+
+
+
         }
     }
