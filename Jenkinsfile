@@ -1,9 +1,10 @@
 pipeline {
-    agent any
-        stages {
-            stage('Using Gitcode') {
+    agent any 
+    stages {
+        stage('Git Hub code ') { 
             steps {
-                sh 'git 'https://github.com/vamsik91/ecomm.git''
+                script{
+                    sh 'git 'https://github.com/vamsik91/ecomm.git''
             }
         }
     }
