@@ -10,8 +10,13 @@
             }
 
             stage('Test the app') { 
+              
                steps {
-                   sh 'mvn test'
+                
+                script{ 
+                     sh 'mvn test'
+                    }
+                  
                 }
             } 
         }
