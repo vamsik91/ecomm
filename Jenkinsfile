@@ -5,7 +5,7 @@
             stage('Git Hub code ') { 
             
                steps {
-                   git 'https://github.com/vamsik91/ecomm.git'
+                   git 'https://github.com/vamsik91/JavaWebCalculator.git'
                 }
             }
 
